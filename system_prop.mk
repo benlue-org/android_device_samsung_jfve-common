@@ -3,7 +3,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.dun=true \
     ro.bluetooth.sap=true \
     ro.bluetooth.hfp.ver=1.6 \
-    ro.bt.bdaddr_path=/efs/bluetooth/bt_addr
+    ro.bt.bdaddr_path=/efs/bluetooth/bt_addr \
+    ro.qualcomm.bt.hci_transport=smd
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -36,7 +37,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicecall=true \
     ro.vendor.audio.sdk.fluencetype=fluence \
     vendor.dedicated.device.for.voip=true \
-    vendor.voice.path.for.pcm.voip=false
+    vendor.voice.path.for.pcm.voip=true
 
 # Qualcomm Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -49,6 +50,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.add_power_save=1 \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.radio.no_wait_for_card=1
+
+# SSR
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.ssr.restart_level=3
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
