@@ -3,7 +3,7 @@ vendor/lib/libaptX_encoder.so
 
 # Thermal
 vendor/bin/mpdecision
-vendor/bin/thermald
+vendor/bin/thermal-engine
 
 # Audio
 vendor/lib/libcsd-client.so
