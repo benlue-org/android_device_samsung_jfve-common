@@ -51,7 +51,7 @@ BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 LZMA_RAMDISK_TARGETS := recovery
-TARGET_KERNEL_CONFIG := lineageos_jfve_defconfig
+TARGET_KERNEL_CONFIG := lineageos_jf_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/jf
 
 # Audio
